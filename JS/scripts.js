@@ -1,28 +1,39 @@
 
 $( document ).ready(function() {
-  //console.log( "ready!" );
-});
+  // console.log( "ready!" );
 
-  $('#submitButton').on('click',function() {
-  createUsername();
-  createMessages();
-  appendNameandChat();
-  clearstuff();
+  $('#submitButton').click(function() {
+  // console.log("It works");
+  
+    createUsername();
+    createMessages();
+    appendNameandChat();
+    clearstuff();
   });
 
+  var usernametext = "";
+  var chattext = "";
+
   function createUsername(){
-    var usernametext = $('#username').val();
+    usernametext = $('#username').val();
+    // console.log(usernametext);
   };
 
   function createMessages(){
-    var chattext = $('#messages').val();
+    chattext = $('#messages').val();
+    // console.log(chattext);
   };
 
-  function appendNameandChat(usernametext, chattext){
-    $('#chatLog').append(usernametext + chattext);
+  function appendNameandChat(){
+    $('#chatLog').append('<li>' + usernametext + chattext +'</li>');
   };
 
   function clearstuff(){
     $('#username').val('');
     $('#messages').val('');
   };
+
+  });
+
+// });
+// 
