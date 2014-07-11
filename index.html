@@ -5,15 +5,20 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="JS/scripts.js"></script>
   </head>
+  
   <body>
-    <h1>Chat Room</h1>
-      <p>Enter Username:</p>
-      <input id="username" type="text">
+    <div id="username">
+      Username: <input id="username" type="text" name="user" value="">
+    </div>
 
-      <button id="submit">Submit</button>
+    <div id="messages">
+      Enter Messages: <input id="messagearea" type="text" value="">
+    </div>
 
-      <p>Enter Chats:</p>
-      <input id="textarea" type="text">
+    <div id="button">
+      <input id="submitButton" type="Submit" value="Submit">
+    </div>
 
+    <div id="chatLog">Chat Log</div>
   </body>
 </html>
