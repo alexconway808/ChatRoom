@@ -1,9 +1,7 @@
 
 $( document ).ready(function() {
-  // console.log( "ready!" );
 
   $('#submitButton').click(function() {
-  // console.log("It works");
   
     createUsername();
     createMessages();
@@ -16,16 +14,14 @@ $( document ).ready(function() {
 
   function createUsername(){
     usernametext = $('#username').val();
-    // console.log(usernametext);
   };
 
   function createMessages(){
     chattext = $('#messages').val();
-    // console.log(chattext);
   };
 
   function appendNameandChat(){
-    $('#chatLog').append('<li>' + usernametext + chattext +'</li>');
+    $('#chatLog').append('<li>' + usernametext + ' ' + ':' + ' ' + chattext +'</li>');
   };
 
   function clearstuff(){
@@ -34,6 +30,3 @@ $( document ).ready(function() {
   };
 
   });
-
-// });
-// 
